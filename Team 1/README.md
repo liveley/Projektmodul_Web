@@ -1,4 +1,4 @@
-# Projektmodul_Web
+# Projektmodul_Web: Team 1
 
 #### Team 1
 - Nadja Müller
@@ -10,7 +10,6 @@
 - Celonis
 - Siteco
 
-### Content:
 
 ### Content
 
