@@ -58,7 +58,7 @@ We used several technologies for different purposes:
 
 #### 1.2.3 Product Overview (User Views)
 
-1. **Main Dashboard:**  Upon entering, the user sees a strategic overview. This view provides a comprehensive overview of the latest AI-driven industry news and a high-level comparison between Celonis and its competitors. Integrated charts visualize key metrics, such as current stock market positioning and performance trends.
+1. **Main Dashboard:**  Upon entering, the user sees a strategic overview. This view provides a comprehensive overview of the latest AI-driven industry news and a high-level comparison between Celonis and its competitors. Integrated charts visualize key metrics, such as current stock market positioning and performance trends. Additionally, a floating AI Chatbot is accessible in the bottom-right corner, allowing users to ask ad-hoc questions and retrieve deep insights from the knowledge base in real-time.
 
 2. **News Intelligence:** Accessible via the sidebar. This section allows you to browse through all AI-generated news articles or use filters to focus on specific companies of interest.
 
