@@ -44,7 +44,7 @@ A **live, conversational dashboard** that continuously **monitors, analyzes, and
 - [Webflow Dashboard](https://celonis-test-dashboard.webflow.io/) 
 - [Webflow Access](https://comments.webflow.com/comment/celonis-test-dashboard?utm_medium=project_link&utm_source=designer&utm_content=celonis-test-dashboard&)
 - [Figma](https://www.figma.com/design/bRXdFpxVVUEnapiPfmkMaD/MUC.DAI-X-CELONIS---Competitor-Dashboard?node-id=0-1&t=t3i9R3FSSYi6OExH-1) 
-
+- [Google_Sheet](https://docs.google.com/spreadsheets/d/1i1sQ1SFxLjceR7di4Ji-U4JI4nBszTkC4fEfIF4BVoo/edit?usp=sharing)
 
 #### 1.2.2 Tech Stack & Tools
 
