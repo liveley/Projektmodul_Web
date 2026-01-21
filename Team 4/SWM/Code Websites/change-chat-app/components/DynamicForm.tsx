@@ -14,6 +14,7 @@ import {
   validateForm,
   ValidationIssue,
   getProjectClassLabel,
+  FRONTEND_TO_N8N_MAPPING,
 } from "@/lib/formRules";
 
 interface DynamicFormProps {
@@ -89,21 +90,24 @@ export default function DynamicForm({
   const handleFieldBlur = async (fieldId: string, value: string) => {
     if (!value.trim() || !sessionId) return; // Nur speichern wenn Wert vorhanden
     
+    // Mappe Frontend-Feld-ID zu n8n-Feld-ID
+    const n8nFieldId = FRONTEND_TO_N8N_MAPPING[fieldId] || fieldId;
+    
     try {
-      console.log(`[DynamicForm] Auto-saving field: ${fieldId}`);
+      console.log(`[DynamicForm] Auto-saving field: ${fieldId} → ${n8nFieldId}`);
       
       await fetch(N8N_ENDPOINTS.UPDATE_FIELD, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           session_id: sessionId,
-          field: fieldId,
+          field: n8nFieldId,  // Verwende gemappte n8n-Feld-ID
           value: value,
           source: "form_autosave",
         }),
       });
       
-      console.log(`[DynamicForm] Auto-saved: ${fieldId}`);
+      console.log(`[DynamicForm] Auto-saved: ${n8nFieldId}`);
     } catch (error) {
       console.error(`[DynamicForm] Auto-save failed for ${fieldId}:`, error);
       // Fehler nicht blockieren - User kann weiterarbeiten
